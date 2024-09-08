@@ -79,7 +79,7 @@ input{
 }
 @media only screen and (max-width: 400px) {
   .container {width: 80%;}
-  .card {width: 90%;}
+  .card {width:100%;}
 }
 
     </style>
