@@ -50,7 +50,7 @@
       }
       .card{
         margin-bottom: 30px;
-        width: 60%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
