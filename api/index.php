@@ -22,7 +22,8 @@
             margin-top:20px;
             box-shadow: 0px 0px 10px ghostwhite;
             background-color: burlywood;
-            max-width: 500px;
+            max-width: 400px;
+          
         }
         h1{
         padding-top:50px;
@@ -49,11 +50,12 @@
       }
       .card{
         margin-bottom: 30px;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
+        /* border:1px solid red; */
        
       }
       .result-items{
@@ -70,6 +72,13 @@ input{
    input:hover{
     background-color: powderblue;
    }
+  
+
+@media only screen and (max-width: 600px) {
+  /* For desktop: */
+  .container {width: 75%;}
+
+}
 
     </style>
     <?php
@@ -92,7 +101,7 @@ input{
         $service_charges = round($service_charges);
     }
     ?>
-    <div class="container">
+    <div class="container  sm-3">
         <h1 class="text-center">Gold Calculator</h1>
         <div class="row justify-content-center ">
             <div class="col col ">
@@ -125,7 +134,7 @@ input{
                         <button type="submit" class="btn btn-primary " style="width:100%">Claculate</button>
                     </div>
                     <div class="result" style="width: 100%;">
-                        <div class="card my-3" style="width: 20rem;">
+                        <div class="card my-3">
                             <h2>Results</h2>
                             
                             <div class="result-items">
