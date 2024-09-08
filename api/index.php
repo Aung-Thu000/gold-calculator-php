@@ -23,7 +23,7 @@
             box-shadow: 0px 0px 10px ghostwhite;
             background-color: burlywood;
             max-width: 400px;
-          
+            min-width:50px;
         }
         h1{
         padding-top:50px;
@@ -50,12 +50,12 @@
       }
       .card{
         margin-bottom: 30px;
-        width: 70%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* border:1px solid red; */
+        border:1px solid red;
        
       }
       .result-items{
@@ -72,12 +72,14 @@ input{
    input:hover{
     background-color: powderblue;
    }
-  
-
-@media only screen and (max-width: 600px) {
-  /* For desktop: */
-  .container {width: 75%;}
-
+   @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {width: 80%;}
+  .card {width: 90%;}
 }
 
     </style>
